@@ -47,6 +47,8 @@ class AllTests
      */
     public function testChapters()
     {
+        $incomplete = false;
+
         // Test our chapters and keep track of where we are
         foreach ($this->classesToTest as $class) {
             $chapter = new \PHPKoans\Tests\KoansTest($class);
